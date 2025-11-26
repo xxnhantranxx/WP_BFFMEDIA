@@ -1,0 +1,252 @@
+html {
+    background-image: linear-gradient(-45deg, #2196f3 0, #2196f3 33%, #00bfa5 100%);
+}
+
+body {
+    background-image: linear-gradient(-45deg, #2196f3 0, #2196f3 33%, #00bfa5 100%);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+body #login{
+    color: rgba(0,0,0,.87);
+    padding: 24px;
+    text-align: center;
+    background-size: cover;
+    background-color: rgba(255,255,255,1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgb(142 142 142 / 20%), 0 1px 1px 0 rgb(243 243 243 / 14%), 0 2px 1px -1px rgb(204 204 204 / 12%);
+    transition: box-shadow .3s cubic-bezier(.4,0,.2,1) 0s;
+    border-radius: 10px;
+    max-width: 635px;
+    width: 100%;
+    margin-top: 0 !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wp-core-ui .button-primary {
+    background: #31b36b !important;
+    border: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.login form {
+    box-shadow: none;
+    border:none;
+}
+
+#language-switcher {
+    background: transparent;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#login h1 a {
+    width: 120px;
+    height: 80px;
+}
+
+#login {
+    margin-top: 50px !important;
+}
+
+.itsec-pwls-login--show #loginform>p,
+.itsec-pwls-login--show #loginform .user-pass-wrap {
+    display: block !important;
+}
+
+.itsec-pwls-login-wrap,
+.itsec-pwls-login-fallback {
+    display: none !important;
+}
+.login #nav a, .login #backtoblog a, .login label{
+    color: #333 !important;
+}
+.login #loginform>p:first-child label{
+    display: none;
+}
+.Connect-title-2786 {
+    font-size: 34px;
+    color: #2196f3;
+    font-weight: 400;
+    font-family: Open Sans,sans-serif;
+    margin-bottom: 25px;
+}
+.loginToIsocal{
+    padding: 0 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.Connect-btnArea-5197{
+    margin: 16px 0;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-around;
+}
+.button-login-isocal{
+    margin: 0 8px;
+    width: 50%;
+    border-radius: 4px;
+}
+.loginToFacebook.button-login-isocal{
+    background: linear-gradient(-45deg,#039be5 0,#039be5 33%,#00bcd4 100%);
+}
+.loginToEmail.button-login-isocal{
+    background: linear-gradient(-45deg,#ec407a 0,#ec407a 33%,#ffa000 100%);
+}
+.button-login-isocal > a {
+    display: block;
+    color: #fff;
+    box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.Content-content-180{
+    color: rgba(0,0,0,.54);
+    border: none;
+    margin: 32px 4px 16px;
+    padding: 0;
+    overflow: visible;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
+.Content-content-180:after {
+    top: -15px;
+    content: attr(data-content);
+    display: inline-block;
+    padding: 0 1.25em;
+    position: relative;
+    font-size: 14px;
+    background: #fff;
+}
+.Connect-btnArea-5197 .button-login-isocal svg{
+    height: 17px !important;
+    top: 1px !important;
+    left: -5px !important;
+}
+#login #loginform{
+    padding: 0 150px;
+    margin-top: 0px;
+}
+#loginform > p, .user-pass-wrap{
+    text-align: left;
+}
+#login h1{
+    display: none;
+}
+.login form .input, .login form .input:focus{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: unset;
+    box-shadow: unset;
+    font-size: 15px;
+    min-height: 35px;
+    line-height: 35px;
+    padding: 0;
+    margin: 0;
+    margin-left: 35px;
+    padding-left: 5px;
+    border-left: 0;
+    height: 35px;
+    background: #E8F0FE;
+}
+.login form .input{
+    width: calc(100% - 35px);
+    padding-right: 50px !important;
+}
+#loginform > p:first-child{
+    position: relative;
+}
+#loginform > p:first-child::before, #lostpasswordform > p:first-child::before{
+    width: 35px;
+    height: 33px;
+    content: "";
+    position: absolute;
+    background: url(../../img/admin/user-svgrepo-com.svg) no-repeat;
+    background-position: 10px center;
+    background-size: 15px 15px;
+    border: 1px solid #ccc;
+    border-right: unset;
+    background-color: #f0f3f5;
+}
+.user-pass-wrap{
+    margin-top: 15px;
+}
+.user-pass-wrap > label{
+    display: none;
+}
+.user-pass-wrap .wp-pwd{
+    position: relative;
+    margin-bottom: 20px;
+}
+.user-pass-wrap .wp-pwd::before{
+    width: 35px;
+    height: 33px;
+    content: "";
+    position: absolute;
+    background: url(../../img/admin/lock-svgrepo-com.svg) no-repeat;
+    background-position: 10px center;
+    background-size: 15px 15px;
+    border: 1px solid #ccc;
+    border-right: unset;
+    background-color: #f0f3f5;
+}
+.login .button.wp-hide-pw{
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    padding: 0;
+}
+.login .button.wp-hide-pw:focus{
+    border: unset !important;
+    box-shadow: unset !important;
+}
+input[type=checkbox]:focus, 
+input[type=color]:focus, 
+input[type=date]:focus, 
+input[type=datetime-local]:focus, 
+input[type=datetime]:focus, 
+input[type=email]:focus, 
+input[type=month]:focus, 
+input[type=number]:focus, 
+input[type=password]:focus, 
+input[type=radio]:focus, 
+input[type=search]:focus, 
+input[type=tel]:focus, 
+input[type=text]:focus, 
+input[type=time]:focus, 
+input[type=url]:focus, 
+input[type=week]:focus, 
+select:focus, textarea:focus{
+    box-shadow: unset !important;
+}
+label{
+    user-select: none;
+}
+#lostpasswordform > p:first-child{
+    text-align: left;
+}
+#lostpasswordform > p:first-child label{
+    display: none;
+}
+#lostpasswordform > p:first-child #user_login{
+    margin-bottom: 20px;
+}
+.login .message{
+    background-color: #ffdfdf;
+}

@@ -1,0 +1,121 @@
+#footer .top-footer {
+  border-bottom: 1px solid #fff;
+}
+#footer .top-footer .box_icon_footer {
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 130px;
+}
+#footer .top-footer .box_icon_footer .icon-box-text p {
+  color: var(--f-58220, #F58220);
+  font-size: 10.578px;
+  font-weight: 400;
+  line-height: 22.567px;
+  margin-bottom: 4px;
+}
+#footer .top-footer .box_icon_footer .icon-box-text h3 {
+  color: #FFF;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22.567px;
+}
+#footer .bottom_footer .w-auto img {
+  width: auto;
+}
+#footer .bottom_footer .text_footer p {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+}
+#footer .bottom_footer .widget_footer h3 {
+  color: #FFF;
+  font-family: "Be Vietnam Pro";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#footer .bottom_footer .menu_footer .ux-menu-link .ux-menu-link__link {
+  padding: 0;
+  min-height: unset;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 15px;
+}
+#footer .bottom_footer .menu_footer .ux-menu-link .ux-menu-link__link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icons/chevron-right.png) no-repeat center center;
+}
+#footer .bottom_footer .menu_footer .ux-menu-link .ux-menu-link__link .ux-menu-link__text {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22.567px;
+  opacity: 0.7;
+}
+#footer .bottom_footer .menu_footer .ux-menu-link .ux-menu-link__link:hover .ux-menu-link__text {
+  color: var(--f-58220, #F58220);
+}
+#footer .bottom_footer .form-contact-us .input-group {
+  margin-bottom: 8px;
+}
+#footer .bottom_footer .form-contact-us .input-group input {
+  padding: 14px 16px;
+  border-radius: 1000px;
+  background: #FFF;
+  height: 44px;
+  margin-bottom: 0;
+  border: none;
+  box-shadow: unset;
+  color: var(--212121, #212121);
+  font-size: 14px;
+  font-weight: 400;
+}
+#footer .bottom_footer .form-contact-us .input-group input::-moz-placeholder {
+  opacity: 0.7;
+}
+#footer .bottom_footer .form-contact-us .input-group input::placeholder {
+  opacity: 0.7;
+}
+#footer .bottom_footer .form-contact-us .input-group.submit .wpcf7-submit {
+  margin: 0;
+  background: #F58220;
+  width: 100%;
+  padding: 12px 24px;
+  color: var(--f-58220, #FFF);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+  min-height: unset;
+}
+#footer .bottom_footer .form-contact-us .input-group.submit:hover .wpcf7-submit {
+  background: #f07a13;
+}
+#footer .bottom_footer .form-contact-us .input-group.submit .wpcf7-spinner {
+  position: absolute;
+}
+#footer .bottom_footer .list-isocal {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+#footer .bottom_footer .list-isocal .item {
+  list-style: none;
+  margin: 0;
+}

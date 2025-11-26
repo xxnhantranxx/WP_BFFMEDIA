@@ -1,0 +1,201 @@
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+table #home-description {
+  display: none;
+}
+.group_2_option {
+  padding: 20px;
+  background: #cccccc;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.group_2_option .title-link-setting {
+  font-weight: 900;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: rgb(8, 94, 15);
+  width: 100%;
+}
+.group_2_option .input_docs {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.group_2_option .input_docs input {
+  margin: 0;
+  margin-left: auto;
+}
+.group_2_option .input_docs:hover {
+  background: #000;
+}
+.group_2_option .input_docs:hover label {
+  color: #00b9eb;
+}
+.group_2_option .side_bar_op {
+  width: 220px;
+  padding-top: 5px;
+  background-color: #23282d;
+}
+.group_2_option .input_docs label {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 0;
+  color: #eee;
+  margin-left: 8px;
+}
+.group_2_option .main_op_cus {
+  width: calc(100% - 220px);
+}
+/* #toplevel_page_wc-admin-path--analytics-overview,
+#toplevel_page_woocommerce-marketing {
+  display: none;
+} */
+.main_op_cus img {
+  width: 100%;
+  height: auto;
+}
+.toplevel_page_theme-general-settings .wp-menu-image img {
+  width: 20px;
+  height: auto;
+}
+.woocommerce-embed-page #wpbody .woocommerce-layout,
+.woocommerce-embed-page .woocommerce-layout__notice-list-hide+.wrap {
+  padding-top: 0;
+}
+.woocommerce-layout__header {
+  display: none;
+}
+.woocommerce-layout__activity-panel-tabs {
+  display: none;
+}
+.woocommerce-layout__header-breadcrumbs {
+  display: none;
+}
+.woocommerce-embed-page .woocommerce-layout__primary {
+  display: none;
+}
+.woocommerce-embed-page #screen-meta,
+.woocommerce-embed-page #screen-meta-links {
+  top: 0;
+}
+#acf-group_63599f8ff1ac6 .acf-fields {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#acf-group_63599f8ff1ac6 .acf-fields>.acf-field {
+  width: 50%;
+}
+#acf-group_6354fbd1dd34b .acf-field-image img {
+  min-width: 30px;
+  min-height: 30px;
+}
+.acf-field-image[data-name="avatar_team"] .acf-image-uploader .image-wrap img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+/* Page order */
+.icon-copy {
+  box-shadow: unset !important;
+  width: 200px;
+  height: 18px;
+  background-image: url(../../img/admin/woocommerce/icons8-copy-18.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-copy.copied {
+  background-image: url(../../img/admin/woocommerce/icons8-check.svg);
+  padding-left: 20px;
+  font-size: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.copy-shiping {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+.shipping-adress{
+  margin-top: 1em;
+  cursor: copy;
+}
+#order_data .order_data_column p{
+  margin: 0;
+}
+.tablenav.top > .alignleft{
+  display: flex;
+}
+#toplevel_page_theme-general-settings .wp-menu-image > img{
+  filter: brightness(0) invert(1);
+}
+#order_data .order_data_column .shipping_method_top > p{
+  padding: 3px 15px !important;
+  max-width: max-content;
+  margin-top: 8px;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3px;
+  cursor: help;
+}
+#order_data .shipping_method_top > p.free_shipping{
+  background-color: #136e00;
+}
+#order_data .shipping_method_top > p.rate_2{
+  background-color: #020058;
+}
+#order_data .shipping_method_top > p.rate_3{
+  background-color: #7e4500;
+}
+#order_data .shipping_method_top > p.rate_4{
+  background-color: #440c44;
+}
+.wrapper-selectAll{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.woocommerce_variations .remove_all_attributes_images{
+  display: none;
+}
+.updated{
+  display: none;
+}
+#customize-outer-theme-controls .accordion-section-title, 
+#customize-theme-controls .accordion-section-title{
+    display: flex;
+    align-items: center
+}
+#filter-everything-pro-update{
+    .notice-alt{
+        display: none;
+    }
+}
