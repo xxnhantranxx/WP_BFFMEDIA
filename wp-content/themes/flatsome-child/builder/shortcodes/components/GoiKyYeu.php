@@ -49,7 +49,7 @@ function GoiKyYeu($atts, $content)
                             <?php endif; ?>
                         </div>
                         <div class="_5ncd">
-                            <a class="button button-dangky" href="#" data-name="<?php echo $NameYearBook; ?>"><span>Chọn gói này</span></a>
+                            <a class="button Booking button-dangky" href="#booking_package" data-name="<?php echo $NameYearBook; ?>" data-package="<?php echo $ClassYearBook.' - '.$NameYearBook; ?>"><span>Chọn gói này</span></a>
                             <a class="button-link lightbox image-lightbox lightbox-gallery zoom-image block" href="<?php echo $ImageDetailYearBook; ?>" data-lightbox="lightbox-gallery"><span>Xem chi tiết</span></a>
                         </div>
                     </div>

@@ -51,7 +51,7 @@ function GoiTour($atts, $content)
                                 </div>
                             </div>
                             <div class="_5ncd">
-                                <a class="button button-dangky" href="#" data-name="<?php echo $TenGoiTour; ?>"><span>Tư vấn tour này </span></a>
+                                <a class="button Booking button-dangky" href="#booking_package" data-package-tour="<?php echo $TenGoiTour; ?>"><span>Tư vấn tour này </span></a>
                                 <a class="button-link" href="<?php echo $LinkTour; ?>"><span>Xem chi tiết</span></a>
                             </div>
                         </div>

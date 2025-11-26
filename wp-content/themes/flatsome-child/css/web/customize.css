@@ -1826,13 +1826,13 @@
   padding: 8px 24px;
 }
 ._4uyw ._0sos ._9gbl .wpcf7-form-control::-moz-placeholder {
-  color: var(--000000, #000);
+  color: #414141;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
 ._4uyw ._0sos ._9gbl .wpcf7-form-control::placeholder {
-  color: var(--000000, #000);
+  color: #414141;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

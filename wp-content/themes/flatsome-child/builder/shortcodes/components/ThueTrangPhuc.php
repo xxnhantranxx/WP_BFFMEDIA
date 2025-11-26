@@ -42,7 +42,7 @@ function ThueTrangPhuc($atts, $content)
                                 </div>
                             </div>
                             <div class="_5ncd">
-                                <a class="button button-dangky" href="#" data-name="<?php echo $TenGoiThueTrangPhuc; ?>"><span>Chọn gói này</span></a>
+                                <a class="button Booking button-dangky" href="#booking_package" data-package-thue-trang-phuc="<?php echo $TenGoiThueTrangPhuc; ?>"><span>Chọn gói này</span></a>
                                 <a class="button-link lightbox image-lightbox lightbox-gallery zoom-image block" href="<?php echo $DetailsTrangPhuc; ?>" data-lightbox="lightbox-gallery"><span>Xem chi tiết</span></a>
                             </div>
                         </div>

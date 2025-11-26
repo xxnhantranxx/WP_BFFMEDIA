@@ -46,7 +46,7 @@
                                                 </div>
                                                 <div class="ButtonBookingGroup">
                                                     <a href="<?php the_permalink(); ?>" class="button Details button-bff"><span>Xem chi tiết</span></a>
-                                                    <a href="#lightbox-album" class="button Booking" data-concept="<?php the_ID(); ?>"><span>Đặt concept này</span></a>
+                                                    <a href="#booking_album" class="button Booking" data-concept="<?php the_title(); ?>"><span>Đặt concept này</span></a>
                                                 </div>
                                             </div>
                                             <div class="BoxRight">
@@ -173,6 +173,7 @@
     </div>
 </section>
 <?php echo do_shortcode('[block id="cam-nhan-khach-hang"]'); ?>
+<span class="scroll-to" data-label="Scroll to: #booking_album" data-bullet="false" data-link="#booking_album" data-title="Booking Album" data-offset-type="custom" data-offset="75"><a name="booking_album"></a></span>
 <?php echo do_shortcode('[block id="form-concept"]'); ?>
 <?php echo do_shortcode('[block id="album-cung-xem"]'); ?>
 <?php echo do_shortcode('[block id="video-hau-truong"]'); ?>

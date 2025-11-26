@@ -372,4 +372,184 @@ jQuery(document).ready(function ($) {
         $('.content-search').hide();
         $('.overlay-footer').hide();
     });
+
+    // Cấu hình mapping giữa data-* attributes và format text
+    var bookingDataConfig = {
+        'data-concept': {
+            format: 'Tôi quan tâm: {value}',
+            inputName: 'text-644'
+        },
+        'data-package': {
+            format: 'Tôi quan tâm: {value}',
+            inputName: 'text-644'
+        },
+        'data-package-video': {
+            format: 'Tôi quan tâm: {value}',
+            inputName: 'text-644'
+        },
+        'data-package-tour': {
+            format: 'Tôi quan tâm: {value}',
+            inputName: 'text-644'
+        },
+        'data-package-thue-trang-phuc': {
+            format: 'Tôi quan tâm Thuê: {value}',
+            inputName: 'text-644'
+        },
+        'data-package-make-up': {
+            format: 'Tôi quan tâm: Makeup - {value}',
+            inputName: 'text-644'
+        },
+        'data-tour': {
+            format: 'Tôi quan tâm: {value}',
+            inputName: 'text-314'
+        },
+        // Có thể thêm các data-* khác ở đây:
+        // 'data-tour': {
+        //     format: 'Tôi quan tâm: {value}',
+        //     inputName: 'text-644'
+        // },
+        // 'data-service': {
+        //     format: 'Tôi quan tâm: {value}',
+        //     inputName: 'text-644'
+        // }
+    };
+    
+    // Hàm format giá trị theo config
+    function formatBookingValue(value, format) {
+        return format.replace('{value}', value);
+    }
+    
+    // Hàm gán giá trị vào input
+    function setValueToInput(value, inputName, format) {
+        var $input = $('input[name="' + inputName + '"]');
+        
+        if ($input.length) {
+            // Format giá trị
+            var formattedValue = formatBookingValue(value, format);
+            
+            // Gán giá trị vào input
+            $input.val(formattedValue);
+            
+            // Trigger change event để các plugin/form handler có thể nhận biết
+            $input.trigger('change');
+        }
+    }
+    
+    // Hàm xử lý click button Booking với data-* attribute
+    function handleBookingClick(dataAttr, value, config) {
+        if (!value || !config) {
+            return;
+        }
+        
+        // Gán giá trị vào input ngay lập tức
+        setValueToInput(value, config.inputName, config.format);
+        
+        // Nếu form chưa được render, đợi một chút rồi thử lại
+        setTimeout(function() {
+            setValueToInput(value, config.inputName, config.format);
+        }, 500);
+        
+        // Quan sát DOM để gán giá trị khi form được render
+        var formObserver = new MutationObserver(function(mutations) {
+            var $input = $('input[name="' + config.inputName + '"]');
+            if ($input.length && !$input.val()) {
+                setValueToInput(value, config.inputName, config.format);
+            }
+        });
+        
+        // Quan sát trong 5 giây để đảm bảo form được render
+        formObserver.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        
+        setTimeout(function() {
+            formObserver.disconnect();
+        }, 5000);
+    }
+    
+    // Đảm bảo button Booking không bị bind lightbox
+    function unbindLightboxFromBookingButtons() {
+        $('.button.Booking').each(function() {
+            var $button = $(this);
+            // Unbind các event lightbox có thể có
+            $button.off('click.magnificPopup');
+            $button.off('click.lightbox');
+            // Thêm attribute để Flatsome không bind lightbox
+            $button.attr('data-no-lightbox', 'true');
+        });
+    }
+    
+    // Khởi tạo ngay khi DOM ready
+    unbindLightboxFromBookingButtons();
+    
+    // Quan sát DOM để unbind lightbox cho các button Booking mới
+    var bookingButtonObserver = new MutationObserver(function(mutations) {
+        var hasNewBookingButtons = false;
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes.length > 0) {
+                $(mutation.addedNodes).find('.button.Booking').each(function() {
+                    if (!$(this).attr('data-no-lightbox')) {
+                        hasNewBookingButtons = true;
+                    }
+                });
+                $(mutation.addedNodes).filter('.button.Booking').each(function() {
+                    if (!$(this).attr('data-no-lightbox')) {
+                        hasNewBookingButtons = true;
+                    }
+                });
+            }
+        });
+        if (hasNewBookingButtons) {
+            unbindLightboxFromBookingButtons();
+        }
+    });
+    
+    bookingButtonObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    // Xử lý click event cho button Booking với tất cả các data-* attributes
+    $(document).off('click', '.button.Booking').on('click', '.button.Booking', function(e) {
+        // Đóng lightbox nếu đang mở
+        if (typeof $.magnificPopup !== 'undefined' && $.magnificPopup.instance && $.magnificPopup.instance.isOpen) {
+            $.magnificPopup.close();
+        }
+        
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của link
+        e.stopPropagation(); // Ngăn event bubbling
+        e.stopImmediatePropagation(); // Ngăn các event handler khác
+        
+        var $button = $(this);
+        
+        // Duyệt qua tất cả các config để tìm data-* attribute có giá trị
+        for (var dataAttr in bookingDataConfig) {
+            if (bookingDataConfig.hasOwnProperty(dataAttr)) {
+                var value = $button.attr(dataAttr);
+                if (value) {
+                    var config = bookingDataConfig[dataAttr];
+                    handleBookingClick(dataAttr, value, config);
+                    
+                    // Scroll đến form nếu có href="#booking_package" hoặc href="#booking_album"
+                    var href = $button.attr('href');
+                    if (href && (href === '#booking_package' || href === '#booking_album')) {
+                        // Đợi một chút để đảm bảo form đã được render và lightbox đã đóng
+                        setTimeout(function() {
+                            var $target = $(href);
+                            if ($target.length) {
+                                $('html, body').animate({
+                                    scrollTop: $target.offset().top - 100
+                                }, 500);
+                            }
+                        }, 500);
+                    }
+                    
+                    break; // Chỉ xử lý data-* đầu tiên tìm thấy
+                }
+            }
+        }
+        
+        return false; // Ngăn chặn mọi hành vi mặc định
+    });
 });

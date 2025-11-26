@@ -40,7 +40,7 @@ function GoiMakeUp($atts)
                                 <div class="ContentMakeUp"><?php echo $ContentMakeUp; ?></div>
                             </div>
                             <div class="_5ncd">
-                                <a class="button button-dangky" href="#" data-name="<?php echo $NameMakeUp; ?>"><span>Đặt Makeup cho lớp tôi</span></a>
+                                <a class="button Booking button-dangky" href="#booking_package" data-package-make-up="<?php echo $NameMakeUp; ?>"><span>Đặt Makeup cho lớp tôi</span></a>
                             </div>
                         </div>
                 <?php

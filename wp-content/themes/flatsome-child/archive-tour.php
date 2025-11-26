@@ -50,7 +50,7 @@
                                                     <?php endif; ?>
                                                 </div>
                                                 <div class="ButtonBookingGroup">
-                                                    <a href="#lightbox-album" class="button Booking" data-concept="<?php the_ID(); ?>"><span>Đặt tour kỷ yếu này</span></a>
+                                                    <a href="#booking_tour" class="button Booking" data-tour="<?php the_title(); ?>"><span>Đặt tour kỷ yếu này</span></a>
                                                 </div>
                                             </div>
                                             <div class="BoxRight">
@@ -145,5 +145,6 @@
 <?php echo do_shortcode('[block id="mau"]'); ?>
 <?php echo do_shortcode('[block id="cam-nhan-khach-hang"]'); ?>
 <?php echo do_shortcode('[block id="faqs-tour"]'); ?>
+<span class="scroll-to" data-label="Scroll to: #booking_tour" data-bullet="false" data-link="#booking_tour" data-title="Booking Tour" data-offset-type="custom" data-offset="75"><a name="booking_tour"></a></span>
 <?php echo do_shortcode('[block id="form-tour"]'); ?>
 <?php get_footer(); ?>
