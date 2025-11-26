@@ -22,6 +22,12 @@ add_action( 'init', function () {
     }
 });
 
+add_action( 'init', function () {
+    if ( function_exists( 'add_ux_builder_post_type' ) ) {
+        add_ux_builder_post_type( 'services' );
+    }
+});
+
 function custom_posts_per_page($query) {
     if (!is_admin() && $query->is_main_query()) {
         // Áp dụng cho post type 'album'

@@ -89,7 +89,7 @@ if (empty($s) || strlen($s) < 3) {
                                         </a>
 
                                         <div class="_9lfn">
-                                            <a href="<?php the_permalink(); ?>" class="_1hgo textLine-1"><?php the_title(); ?></a>
+                                            <a href="<?php the_permalink(); ?>" class="_1hgo textLine-2"><?php the_title(); ?></a>
                                             <div class="_1srv type textLine-1"><?php echo esc_html($type_label); ?> - <?php the_permalink(); ?></div>
                                             <div class="_5khu textLine-3"><?php echo $excerpt_content; ?></div>
                                         </div>

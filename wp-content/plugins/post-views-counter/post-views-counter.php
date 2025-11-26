@@ -2,7 +2,7 @@
 /*
 Plugin Name: Post Views Counter
 Description: Post Views Counter allows you to collect and display how many times a post, page, or other content has been viewed in a simple, fast and reliable way.
-Version: 1.5.8
+Version: 1.5.9
 Author: dFactory
 Author URI: https://dfactory.co/
 Plugin URI: https://postviewscounter.com/
@@ -30,7 +30,7 @@ if ( ! class_exists( 'Post_Views_Counter' ) ) {
 	 * Post Views Counter final class.
 	 *
 	 * @class Post_Views_Counter
-	 * @version	1.5.8
+	 * @version	1.5.9
 	 */
 	final class Post_Views_Counter {
 
@@ -103,7 +103,7 @@ if ( ! class_exists( 'Post_Views_Counter' ) ) {
 				'deactivation_delete'	=> false,
 				'license'				=> ''
 			],
-			'version'	=> '1.5.8'
+			'version'	=> '1.5.9'
 		];
 
 		// instances
@@ -179,6 +179,7 @@ if ( ! class_exists( 'Post_Views_Counter' ) ) {
 					self::$instance->counter = new Post_Views_Counter_Counter();
 
 					new Post_Views_Counter_Columns();
+					new Post_Views_Counter_Toolbar();
 
 					self::$instance->crawler = new Post_Views_Counter_Crawler_Detect();
 					self::$instance->frontend = new Post_Views_Counter_Frontend();
@@ -219,6 +220,7 @@ if ( ! class_exists( 'Post_Views_Counter' ) ) {
 			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-settings.php' );
 			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-admin.php' );
 			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-columns.php' );
+			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-toolbar.php' );
 			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-query.php' );
 			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-cron.php' );
 			include_once( POST_VIEWS_COUNTER_PATH . 'includes/class-counter.php' );

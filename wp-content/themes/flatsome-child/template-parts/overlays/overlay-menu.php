@@ -35,20 +35,8 @@ if (
 
 	<?php do_action('flatsome_before_sidebar_menu'); ?>
 	<div class="navbar-header">
-		<div class="nav-toggle">
-			<button title="Close (Esc)" type="button" class="mfp-close">
-				<i class="icon-menu"></i>
-			</button>
-		</div>
 		<div class="logo-menu-sidebar">
 			<a href="<?php echo home_url(); ?>"><img src="<?php echo $site_logo[0]; ?>" alt=""></a>
-		</div>
-		<div class="right-head-menu-sidebar">
-			<div class="show-for-small button-mobile-right">
-            <?php
-                //echo do_shortcode('[ButtonContactUs]');
-            ?>
-			</div>
 		</div>
 	</div>
 

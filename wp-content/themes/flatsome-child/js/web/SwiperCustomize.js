@@ -16,6 +16,7 @@
                 slidesPerView: 1,
                 grabCursor: true,
                 effect: 'fade',
+                autoHeight: true,
                 autoplay: {
                     delay: 4000,
                     disableOnInteraction: false,
@@ -154,7 +155,7 @@
                 },
                 breakpoints: {
                     320: { 
-                        slidesPerView: 1,
+                        slidesPerView: 1.5,
                         spaceBetween: 10,
                     },
                     768: { 
@@ -175,6 +176,7 @@
                 slidesPerView: 1,
                 spaceBetween: 20,
                 grabCursor: true,
+                // autoHeight: true,
                 autoplay: {
                     delay: 2000,
                     disableOnInteraction: false,

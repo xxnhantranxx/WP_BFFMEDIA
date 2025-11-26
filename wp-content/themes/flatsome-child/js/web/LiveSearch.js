@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
         let query = $(this).val().trim();
         
         if (query.length < 2) { // Chỉ tìm khi có ít nhất 2 ký tự
-            $('#area-live-search').removeClass("active");
+            $('.live-search-results-dropdown').removeClass("active");
             return;
         }
 
@@ -20,20 +20,20 @@ jQuery(document).ready(function ($) {
                     nonce: ajax_object.nonce
                 },
                 beforeSend: function() {
-                    $('#area-live-search').addClass("active");
-                    $('#area-live-search').html('<p>Đang tìm kiếm...</p>');
+                    $('.live-search-results-dropdown').addClass("active");
+                    $('.live-search-results-dropdown').html('<p>Đang tìm kiếm...</p>');
                 },
                 success: function (response) {
                     if (response.success) {
                         let foundCounts = response.data.found;
                         let listProducts = response.data.products;
-                        $("#area-live-search").html(renderProducts(listProducts, foundCounts, query));
+                        $(".live-search-results-dropdown").html(renderProducts(listProducts, foundCounts, query));
                     } else {
-                        $('#area-live-search').html('<p>Có lỗi xảy ra khi tìm kiếm.</p>');
+                        $('.live-search-results-dropdown').html('<p>Có lỗi xảy ra khi tìm kiếm.</p>');
                     }
                 },
                 error: function () {
-                    $('#area-live-search').html('<p>Lỗi khi tìm kiếm.</p>');
+                    $('.live-search-results-dropdown').html('<p>Lỗi khi tìm kiếm.</p>');
                 }
             });
         }, 300); // Delay 300ms tránh gọi API liên tục
@@ -41,15 +41,15 @@ jQuery(document).ready(function ($) {
 
     // Hiển thị kết quả khi focus vào input
     $('.search-field').on('focus', function () {
-        if ($('#area-live-search').html().trim() !== '' && $(this).val().trim().length >= 2) {
-            $('#area-live-search').addClass("active");
+        if ($('.live-search-results-dropdown').html().trim() !== '' && $(this).val().trim().length >= 2) {
+            $('.live-search-results-dropdown').addClass("active");
         }
     });
     
     // Ẩn kết quả khi click ra ngoài
     $(document).on('click', function (e) {
-        if (!$(e.target).closest('.search-field, #area-live-search').length) {
-            $('#area-live-search').removeClass('active');
+        if (!$(e.target).closest('.search-field, .live-search-results-dropdown').length) {
+            $('.live-search-results-dropdown').removeClass('active');
         }
     });
 
@@ -85,7 +85,7 @@ jQuery(document).ready(function ($) {
                     <div class="box-text">
                         <h3 class="title-product">${product.title}</h3>
                         <div class="type-label">${product.type_label || ''}</div>
-                        ${excerpt ? `<div class="excerpt">${excerpt}</div>` : ''}
+                        ${excerpt ? `<div class="excerpt textLine-2">${excerpt}</div>` : ''}
                     </div>
                 </a>
             </li>
