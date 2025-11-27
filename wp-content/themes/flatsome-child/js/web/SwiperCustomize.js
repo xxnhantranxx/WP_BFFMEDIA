@@ -292,6 +292,40 @@
                 },
             }
         },
+        QuyTrinh: {
+            selector: '.QuyTrinh',
+            options: {
+                loop: false, // Bật chế độ vòng lặp vô hạn
+                    slidesPerView: 1,
+                    // spaceBetween: 16,
+                    // slidesPerGroup: 3,
+                    navigation: {
+                        nextEl: ".cntt-button-next",
+                        prevEl: ".cntt-button-prev",
+                    },
+                    grabCursor: true,
+                    // autoplay: {
+                    //     delay: 5000,
+                    //     disableOnInteraction: false,
+                    // },
+                    // freeMode: true,
+                    // pagination: {
+                    //     el: '.swiper-pagination',
+                    //     clickable: true,
+                    // },
+                    breakpoints: {
+                        320: { 
+                            slidesPerView: 1.5,
+                        },
+                        768: { 
+                            slidesPerView: 3,
+                        },
+                        1024: { 
+                            slidesPerView: 4,
+                        },
+                    },
+            }
+        },
     };
 
     /**

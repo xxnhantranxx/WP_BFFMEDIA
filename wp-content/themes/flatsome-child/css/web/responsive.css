@@ -105,9 +105,6 @@
     font-size: 14px;
     right: 15px;
   }
-  .card-overview .card-overview-img ._4yir img {
-    height: 220px;
-  }
   .card-overview .card-overview-title {
     bottom: 12px;
   }
@@ -471,6 +468,65 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  ._6bsf ._3urf ._1ppj ._8rgd {
+    font-size: 36px;
+    line-height: 1.3em;
+  }
+  ._6bsf ._3urf ._2pbi ._3qou ._7oqo {
+    font-size: 22px;
+    line-height: 1.3em;
+  }
+  ._6bsf ._8izp ._3ldw {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  ._6bsf ._8izp ._3ldw ._1ywd {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  ._6bsf ._8izp ._3ldw ._0nng {
+    width: 100%;
+  }
+  .gallery-inner .grid .grid-item {
+    width: calc(50% - 15px);
+  }
+  .HotTrendAlbumSlider .box-album .BoxLeft ._6qdm,
+  .DetaiTopTour .box-album .BoxLeft ._6qdm {
+    font-size: 36px;
+  }
+  ._0lub ._9teg ._8hcr {
+    width: 100%;
+  }
+  .SinglePostContent ._5ehx {
+    display: block;
+  }
+  .SinglePostContent ._5ehx .single-post-meta {
+    margin-bottom: 12px;
+  }
+  .SinglePostContent ._5ehx .single-post-meta .single-post-date ._0vgy {
+    display: none;
+  }
+  .row_box_image .col_box_image,
+  .row_box_image .col_box_text {
+    margin-bottom: 25px;
+  }
+  .FaqsPanel {
+    display: block;
+  }
+  .FaqsPanel .tab-head {
+    width: 100%;
+    margin-right: 0;
+  }
+  .FaqsPanel .tab-head h2 {
+    font-size: 36px;
+  }
+  .FaqsPanel .tab-contents {
+    width: 100%;
+  }
+  .s2_r2 .s2_r2_c1 {
+    margin-bottom: 20px;
+  }
   #main ._8aoy {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -607,6 +663,12 @@
   #main .section-28 {
     padding: 30px 0;
     padding-bottom: 50px;
+  }
+  #main .section-27 {
+    padding-bottom: 15px;
+  }
+  #main .Galleryalbum {
+    padding-top: 15px;
   }
   #footer .top-footer .box_icon_footer .icon-box-text h3 {
     font-size: 18px;

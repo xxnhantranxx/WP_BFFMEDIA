@@ -18,6 +18,12 @@ jQuery(document).ready(function ($) {
     )
     wow.init();
 
+    $('.arcontactus-message-button').click(function(){
+        $('.messangers-block').toggleClass('show-messageners-block');
+        $(this).children('.icons').toggleClass('show-messageners-block');
+        $(this).children('.arcontactus-close').toggleClass('show-messageners-block');
+    });
+    
     // Hàm khởi tạo select2
     function initSelect2() {
         $('.wpc-filters-widget-select').each(function() {

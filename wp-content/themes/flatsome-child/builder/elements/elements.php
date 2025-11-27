@@ -27,3 +27,4 @@ require_once __DIR__ . '/components/FaqsPanel.php';
 require_once __DIR__ . '/components/MegaMenu.php';
 require_once __DIR__ . '/components/MegaMenuLv2.php';
 require_once __DIR__ . '/components/MegaMenuLv3.php';
+require_once __DIR__ . '/components/QuyTrinh.php';

@@ -137,9 +137,9 @@
             }
         }
     }
-    .card-overview .card-overview-img ._4yir img{
-        height: 220px;
-    }
+    // .card-overview .card-overview-img ._4yir img{
+    //     height: 220px;
+    // }
     .card-overview .card-overview-title{
         bottom: 12px;
     }
@@ -540,6 +540,75 @@
         width: 100%;
         object-fit: cover;
     }
+    ._6bsf{
+        ._3urf ._1ppj ._8rgd{
+            font-size: 36px;
+            line-height: 1.3em;
+        }
+        ._3urf ._2pbi ._3qou ._7oqo{
+            font-size: 22px;
+            line-height: 1.3em;
+        }
+        ._8izp ._3ldw{
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            ._1ywd{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+            ._0nng{
+                width: 100%;
+            }
+        }
+    }
+    .gallery-inner .grid .grid-item{
+        width: calc(50% - 15px);
+    }
+    .HotTrendAlbumSlider .box-album .BoxLeft ._6qdm, 
+    .DetaiTopTour .box-album .BoxLeft ._6qdm{
+        font-size: 36px;
+    }
+    ._0lub ._9teg{
+        ._8hcr{
+            width: 100%;
+        }
+    }
+    .SinglePostContent ._5ehx{
+        display: block;
+        .single-post-meta{
+            margin-bottom: 12px;
+            .single-post-date{
+                ._0vgy{
+                    display: none;
+                }
+            }
+        }
+    }
+    .row_box_image{
+        .col_box_image ,
+        .col_box_text{
+            margin-bottom: 25px;
+        }
+    }
+    .FaqsPanel {
+        display: block;
+        .tab-head{
+            width: 100%;
+            margin-right: 0;
+            h2{
+                font-size: 36px;
+            }
+        }
+        .tab-contents{
+            width: 100%;
+        }
+    }
+    .s2_r2{
+        .s2_r2_c1 {
+            margin-bottom: 20px;
+        }
+    }
     #main{
         ._8aoy {
             padding-top: 15px;
@@ -681,6 +750,12 @@
         .section-28{
             padding: 30px 0;
             padding-bottom: 50px;
+        }
+        .section-27{
+            padding-bottom: 15px;
+        }
+        .Galleryalbum{
+            padding-top: 15px;
         }
     }
     #footer {

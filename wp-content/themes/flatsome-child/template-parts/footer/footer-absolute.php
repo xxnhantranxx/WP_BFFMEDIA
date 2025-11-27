@@ -16,4 +16,4 @@ do_action( 'flatsome_absolute_footer_secondary' );
 $flatsome_absolute_footer_secondary = trim( ob_get_clean() );
 $flatsome_footer_right_text = trim( get_theme_mod( 'footer_right_text', '' ) );
 ?>
-<div class="overlay-footer"></div>
+

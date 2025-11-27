@@ -350,6 +350,23 @@
   transition: all 0.3s ease-in-out;
 }
 
+.short-height .card-service .card-service-img ._4yir img {
+  height: 350px;
+}
+.short-height .card-service .card-service-title ._7hjf {
+  padding: 15px;
+}
+.short-height .card-service .card-service-title ._7hjf ._6cfb {
+  margin-right: 0;
+  width: 100%;
+}
+.short-height .card-service .card-service-title ._7hjf ._6cfb ._2wqm-title {
+  font-size: 15px;
+}
+.short-height .card-service .card-service-title ._7hjf i {
+  display: none;
+}
+
 .s3_r2_c2_r1_c2 > .col-inner {
   margin-top: 125px;
 }
@@ -445,6 +462,20 @@
   color: var(--212121, #212121);
   opacity: 1;
   text-align: justify;
+}
+.BlockServiceText.width-100 {
+  max-width: 100%;
+}
+.BlockServiceText.width-100 .title, .BlockServiceText.width-100 p {
+  max-width: 100%;
+}
+
+.section-2 .BlockServiceText {
+  max-width: 100%;
+}
+.section-2 .BlockServiceText .title {
+  font-size: 30px;
+  line-height: 1.3em;
 }
 
 .s5_r2 {
@@ -969,6 +1000,12 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+.heading_s8.white-text h2 {
+  color: #FFF;
+}
+.heading_s8.white-text .description {
+  color: #FFF;
+}
 
 .VideoList .list-videos {
   display: flex;
@@ -1326,6 +1363,9 @@
   line-height: normal;
   max-width: 588px;
   margin-bottom: 30px;
+}
+.BannerWebsite .content-banner .content-inner .long-width-content h2, .BannerWebsite .content-banner .content-inner .long-width-content p {
+  max-width: 740px;
 }
 
 .text_s14 h2 {
@@ -3908,6 +3948,178 @@
   margin-bottom: 0;
 }
 
+.GroupButton {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.GroupButton .button-outline {
+  margin: 0;
+  height: 44px;
+  box-sizing: border-box;
+}
+.GroupButton .button-outline span {
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.s48_r1 .s48_r1_c {
+  margin-bottom: 25px;
+}
+
+.QuyTrinh .item_QuyTrinh:first-child ._0ngs ._6cyu::before {
+  content: "";
+  width: 12px;
+  height: 20px;
+  background: url(../../img/PolygonFirst.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: -5px;
+  bottom: 0;
+  z-index: 1;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu {
+  padding-top: 0;
+  position: relative;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar {
+  position: relative;
+  height: 20px;
+  background: #ffcda2;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar::before {
+  content: "";
+  width: 17px;
+  height: 100%;
+  background: url(../../img/Polygon.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar::after {
+  content: "";
+  width: 2px;
+  height: calc(100% - 1px);
+  background: #ffcda2;
+  position: absolute;
+  right: -1px;
+  top: 0px;
+  z-index: 1;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar ._7vni {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  background: var(--Mau_1);
+  border: 4px solid #fff;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar ._3jtx {
+  border-radius: 4px;
+  background: var(--Mau_1);
+  padding: 4px 8px;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar ._3jtx ._5ipg {
+  margin-right: 0;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: Oswald;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._6cyu ._7rar ._3jtx::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(--Mau_1);
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 2px);
+  transform: translateX(-50%);
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._8oao {
+  border-radius: 8px;
+  background: rgb(244, 232, 222);
+  padding: 12px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  margin-top: 17px;
+  color: var(--White, #FFF);
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._8oao ._1wwt {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._8oao ._7soq {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._8oao ._3jtx {
+  margin-bottom: 10px;
+}
+.QuyTrinh .item_QuyTrinh ._0ngs ._8oao ._3jtx ._5ipg {
+  color: var(--Mau_1);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-family: Oswald;
+}
+.QuyTrinh ._2tka {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.QuyTrinh ._2tka .cntt-button-slide {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgb(244, 232, 222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.QuyTrinh ._2tka .cntt-button-slide i {
+  color: #212121;
+}
+.QuyTrinh ._2tka .cntt-button-slide.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.s50_r2 {
+  margin-top: 30px;
+}
+
 #main .MainAlbum {
   background: #FCF7F2;
 }
@@ -3930,7 +4142,6 @@
   z-index: 2;
 }
 #main .section-4 {
-  background: #F4E8DE;
   padding-top: 100px;
   padding-bottom: 60px;
   margin-top: -50px;
